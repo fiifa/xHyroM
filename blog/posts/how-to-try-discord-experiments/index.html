@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="title" content="How to try discord experiments">
+    <meta name="description" content="Post about how to enable discord experiments">
+    <meta name="keywords" content="Hyro, xHyroM, general_kubo, hyro.dev, dev, site, personal, blogs, posts, discord, developer">
+    <meta name="author" content="xHyroM">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/blog/posts/how-to-try-discord-experiments/">
+    <meta property="og:title" content="How to try discord experiments">
+    <meta property="og:description" content="Post about how to enable discord experiments">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="/blog/posts/how-to-try-discord-experiments/">
+    <meta property="twitter:title" content="How to try discord experiments">
+    <meta property="twitter:description" content="Post about how to enable discord experiments">
+
+    <!-- Other Tags -->
+    <title>How to try discord experiments</title>
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="/styles/base.css">
+  </head>
+
+  <body>
+    <nav>
+    <a class="big" href="/">Home</a>
+    <a class="big" href="/projects">Projects</a>
+    <a class="big" href="/blog">Blog</a>
+    <a class="big" href="https://github.com/xHyroM" target="_blank">GitHub</a>
+</nav>
+
+    <main>
+      
+<article>
+  <header>
+    <h1>How to try discord experiments</h1>
+
+    <time datetime="2022-04-07 00:00:00">
+      April 7th, 2022
+    </time>
+    •
+    1 min reading time
+  </header>
+
+  <div>
+    <p>If you want to try things that discord does that are not yet published you need to do a few things. In this post we'll show how to unblock the "Experiment" tab and how to download the development version of Discord (no canary).</p>
+<p><img src="/discord-experiments-list.png" alt="discord experiments list"></p>
+<h2>Download development version of Discord</h2>
+<p>When we want to try the latest unreleased stuff, we need a different client than Canary. These things come to canary later.<br>
+You need to download Discord Development. Just open this link:</p>
+<ul>
+<li>https://discordapp.com/api/download/development?platform=win (Windows)</li>
+<li>https://discordapp.com/api/download/development?platform=linux&amp;format=deb (Linux, deb)</li>
+<li>https://discordapp.com/api/download/development?platform=linux&amp;format=tar.gz (Linux, tar.gz)</li>
+<li>https://discordapp.com/api/download/development?platform=osx (Mac)</li>
+</ul>
+<h2>Open console, use script</h2>
+<p>If we already have Discord Development downloaded, all we need to do is open the console in the client using the shortcut <code>CTRL + SHIFT + I</code> and then paste this code into the console:</p>
+<pre><code class="language-js hljs language-javascript"><span class="hljs-title class_">Object</span>.<span class="hljs-title function_">defineProperty</span>((webpackChunkdiscord_app.<span class="hljs-title function_">push</span>([[<span class="hljs-string">''</span>],{},<span class="hljs-function"><span class="hljs-params">e</span>=&gt;</span>{m=[];<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> c <span class="hljs-keyword">in</span> e.<span class="hljs-property">c</span>)m.<span class="hljs-title function_">push</span>(e.<span class="hljs-property">c</span>[c])}]),m).<span class="hljs-title function_">find</span>(<span class="hljs-function"><span class="hljs-params">m</span>=&gt;</span>m?.<span class="hljs-property">exports</span>?.<span class="hljs-property">default</span>?.<span class="hljs-property">isDeveloper</span>!==<span class="hljs-keyword">void</span> <span class="hljs-number">0</span>).<span class="hljs-property">exports</span>.<span class="hljs-property">default</span>,<span class="hljs-string">"isDeveloper"</span>,{<span class="hljs-attr">get</span>:<span class="hljs-function">()=&gt;</span><span class="hljs-literal">true</span>});
+</code></pre>
+<p>This code will set the <code>isDeveloper</code> property to true.</p>
+<h2>Test experiments</h2>
+<p>Finally, all we have to do is go into the settings and at the very bottom we'll see the <code>Experiments</code> tab. We click on that, and we'll see experiments. You always have a select menu where you can choose what type you want.</p>
+
+  </div>
+</article>
+
+<hr>
+
+<nav>
+  <ul>
+    <li>
+      ← Previous: <a href="/blog/posts/discord-rollouts/" rel="prev">Discord Rollouts</a>
+    </li>
+    
+  </ul>
+</nav>
+    </main>
+
+    <footer>
+    
+    
+
+    Build with <a href="https://lume.land" target="_blank">Lume</a> and <a href="https://typescriptlang.org/" target="_blank">TypeScript</a>
+    <br><br>
+
+    <span class="footerInfo">
+        build at: Thu, 07 Apr 2022 18:03:34 GMT
+        <br>
+        commit: e35c7813ea6965d03dd88b96a78128531c303093
+    </span>
+</footer>
+  
+</body></html>
