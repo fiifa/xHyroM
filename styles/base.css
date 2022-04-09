@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
+:root {
+    --background-color: #131516;
+    --text-color: #d0d0d0;
+    --gray-color: #4f545c;
+}
+
 body {
-    background-color: #131516;
-    color: #d0d0d0;
+    background-color: var(--background-color);
+    color: var(--text-color);
     max-width: 800px;
     margin: auto;
     padding: 15px;
@@ -31,6 +37,20 @@ blockquote {
     margin: 0;
     padding-left: 1.2rem;
     border-left: 4px solid #4f545c;
+}
+
+input, textarea {
+    padding:10px;
+    border:0;
+    margin: 10px 0;
+    background-color: var(--background-color);
+    box-shadow:0 0 8px 5px var(--gray-color);
+    color: var(--text-color);
+    outline: none;
+}
+
+form {
+    text-align: center;
 }
 
 .big {
@@ -174,4 +194,34 @@ footer {
 
 .footerInfo {
     font-size: .75rem;
+}
+
+button {
+    background-color: var(--gray-color);
+    border: 1px solid var(--gray-color);
+    border-radius: 4px;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 14px;
+    height: 36px;
+    line-height: 27px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    outline: none;
+    transition: 0.2s;
+}
+
+button:hover {
+    border-color: #d0d0d0;
+}
+
+button:focus {
+    border-color: #4285f4;
 }

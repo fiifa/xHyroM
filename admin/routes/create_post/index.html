@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="title" content="Create Post">
+    <meta name="description" content="Route for create blog post">
+    <meta name="keywords" content="Hyro, xHyroM, general_kubo, hyro.dev, dev, site, personal, blogs, posts, discord, developer">
+    <meta name="author" content="xHyroM">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/admin/routes/create_post/">
+    <meta property="og:title" content="Create Post">
+    <meta property="og:description" content="Route for create blog post">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="/admin/routes/create_post/">
+    <meta property="twitter:title" content="Create Post">
+    <meta property="twitter:description" content="Route for create blog post">
+
+    <!-- Other Tags -->
+    <title>Create Post</title>
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="/styles/base.css">
+
+    
+      <script src="/scripts/main.js"></script>
+    
+  </head>
+
+  <body>
+    <nav>
+    <a class="big" href="/">Home</a>
+    <a class="big" href="/projects">Projects</a>
+    <a class="big" href="/blog">Blog</a>
+    <a class="big" href="https://github.com/xHyroM" target="_blank">GitHub</a>
+</nav>
+
+    <main>
+      
+<h1>Create Post</h1>
+
+<form onsubmit="createPostForm(event, 'PUT', 'https://personal_site-worker.hyro.workers.dev/post')">
+    
+        <input type="text" placeholder="Title" id="title" required="">
+
+        <br>
+    
+        <input type="text" placeholder="Description" id="description" required="">
+
+        <br>
+    
+        <input type="text" placeholder="Authorization Name" id="adminName">
+
+        <br>
+    
+        <input type="password" placeholder="Authorization Password" id="adminPass">
+
+        <br>
+    
+
+    
+        <textarea id="content" placeholder="Content" value=""></textarea>
+    
+
+    <br>
+
+    <button class="button" type="submit">Submit</button>
+</form>
+    </main>
+
+    <footer>
+    
+    
+
+    Build with <a href="https://lume.land" target="_blank">Lume</a> and <a href="https://typescriptlang.org/" target="_blank">TypeScript</a>
+    <br><br>
+
+    <span class="footerInfo">
+        build at: Sat, 09 Apr 2022 19:36:46 GMT
+        <br>
+        commit: feaadbe7ee626dee4e7af0756502e17067eda0f3
+    </span>
+</footer>
+  
+</body></html>
